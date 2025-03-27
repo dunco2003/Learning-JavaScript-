@@ -1,0 +1,68 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 30px;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: #fff;
+}
+
+h1 {
+    font-size: 28px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.button-container {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:nth-child(1) { background-color: #ff4081; color: #fff; }
+button:nth-child(2) { background-color: #4caf50; color: #fff; }
+button:nth-child(3) { background-color: #ff9800; color: #fff; }
+
+/* Dynamic Box */
+#box {
+    width: 200px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+}
+
+/* List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    margin: 5px auto;
+    width: 200px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+ul li:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
