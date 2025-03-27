@@ -1,17 +1,26 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     text-align: center;
     margin: 30px;
     background: linear-gradient(to right, #4facfe, #00f2fe);
     color: #fff;
+    transition: background 0.5s ease;
 }
 
+/* Dark Mode */
+.dark-mode {
+    background: #121212;
+    color: #e0e0e0;
+}
+
+/* Header */
 h1 {
     font-size: 28px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+/* Buttons */
 .button-container {
     margin: 20px 0;
 }
@@ -27,12 +36,14 @@ button {
 }
 
 button:hover {
-    opacity: 0.8;
+    transform: scale(1.05);
 }
 
 button:nth-child(1) { background-color: #ff4081; color: #fff; }
 button:nth-child(2) { background-color: #4caf50; color: #fff; }
 button:nth-child(3) { background-color: #ff9800; color: #fff; }
+button:nth-child(4) { background-color: #2196f3; color: #fff; }
+button:nth-child(5) { background-color: #333; color: #fff; }
 
 /* Dynamic Box */
 #box {
@@ -46,6 +57,12 @@ button:nth-child(3) { background-color: #ff9800; color: #fff; }
     align-items: center;
     justify-content: center;
     transition: all 0.4s ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
+    transform: scale(0.5);
+    pointer-events: none;
 }
 
 /* List */
@@ -65,4 +82,4 @@ ul li {
 
 ul li:hover {
     background: rgba(255, 255, 255, 0.5);
-}
+                     }
