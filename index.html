@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive JavaScript DOM Manipulation</title>
+    <title>Interactive JavaScript Effects</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1 id="title">Welcome to Dynamic Web</h1>
+        <h1 id="title">Welcome to My Interactive Page</h1>
     </header>
 
     <main>
-        <p id="description">Click the buttons below to see the magic happen!</p>
-        
+        <p id="description">Click the buttons below to explore dynamic effects!</p>
+
         <div class="button-container">
             <button onclick="changeText()">Change Text</button>
             <button onclick="toggleBox()">Toggle Box</button>
             <button onclick="addItem()">Add Item</button>
+            <button onclick="changeBackground()">Change Background</button>
+            <button onclick="toggleDarkMode()">Dark Mode</button>
         </div>
 
-        <div id="box">
+        <div id="box" class="hidden">
             <p>This is a dynamic box.</p>
         </div>
 
@@ -32,4 +34,4 @@
 
     <script src="script.js"></script>
 </body>
-</html>
+    </html>
