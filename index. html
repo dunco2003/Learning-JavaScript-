@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript DOM Manipulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Welcome to Dynamic Web</h1>
+    </header>
+
+    <main>
+        <p id="description">Click the buttons below to see the magic happen!</p>
+        
+        <div class="button-container">
+            <button onclick="changeText()">Change Text</button>
+            <button onclick="toggleBox()">Toggle Box</button>
+            <button onclick="addItem()">Add Item</button>
+        </div>
+
+        <div id="box">
+            <p>This is a dynamic box.</p>
+        </div>
+
+        <ul id="itemList">
+            <li>Item 1</li>
+            <li>Item 2</li>
+        </ul>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
